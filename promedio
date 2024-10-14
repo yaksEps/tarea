@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Promedio {
+    public static void main(String[] args) {
+        // Crear un escáner para leer la entrada del usuario
+        Scanner teclado = new Scanner(System.in);
+
+        // Solicitar al usuario la cantidad de números
+        System.out.print("Ingrese la cantidad de números para calcular el promedio: ");
+        int cantidadNumeros = teclado.nextInt();
+
+        // Inicializar una variable para la suma de los números
+        double suma = 0;
+
+        // Leer los números del usuario y sumarlos
+        for (int i = 1; i <= cantidadNumeros; i++) {
+            System.out.print("Ingrese el número " + i + ": ");
+            double numero = teclado.nextDouble();
+            suma += numero;
+        }
+
+        // Calcular el promedio
+        double promedio = suma / cantidadNumeros;
+
+        // Mostrar el promedio
+        System.out.println("El promedio es: " + promedio);
+    }
+}
+
+
