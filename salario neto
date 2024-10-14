@@ -12,3 +12,5 @@ double deduccionesadicionales = teclado.nextDouble();
 double impuestos= salariobruto*(porcentajedeimpuestos / 100);
 double salarioneto = salariobruto - impuestos - deduccionesadicionales;
 System.out.println("El salario neto es: " + salarioneto);
+}
+}
