@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class prueba{
+public static void main (String [] args){
+//calcular salario neto
+Scanner teclado = new Scanner(System.in);
+System.out.print("Ingrese el salario bruto mensual");
+double salariobruto = teclado.nextDouble();
+System.out.print("Ingrese el porcentaje de impuestos");
+double porcentajedeimpuestos = teclado.nextDouble();
+System.out.print ("Ingrese las deducciones adicionales");
+double deduccionesadicionales = teclado.nextDouble();
+double impuestos= salariobruto*(porcentajedeimpuestos / 100);
+double salarioneto = salariobruto - impuestos - deduccionesadicionales;
+System.out.println("El salario neto es: " + salarioneto);
