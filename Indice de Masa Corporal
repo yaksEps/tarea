@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class MasaCorporal {
+    public static void main(String[] args){
+        double peso,estatura;
+        Scanner teclado =   new Scanner(System.in);
+        System.out.println("Ingrese su peso (kg): ");
+        peso=teclado.nextDouble();
+        System.out.println("Ingrese su estatura (metros): ");
+        estatura=teclado.nextDouble();
+        double resutlado=peso/(estatura*estatura);
+        System.out.println("Su masa corporal es de: "+resutlado);
+    }
