@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+public class SecuenciaAritmetica{
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int numeroInicio,diferencial,numeroFinal;
+         System.out.println("Ingrese el numero de incio: ");
+        numeroInicio=teclado.nextInt();
+        System.out.println("Ingrese el diferencial de incio: ");
+        diferencial=teclado.nextInt();
+        System.out.println("Ingrese el numero final: ");
+        numeroFinal=teclado.nextInt();
+        if(numeroInicio>0 || diferencial>0 || numeroFinal>0){
+            do {
+                System.out.println(numeroInicio);
+                numeroInicio=numeroInicio+diferencial;
+            } while (numeroInicio<=numeroFinal);
+        }else{
+            System.out.println("El numero no es positivo o entero");
+        }
+    }
+}
