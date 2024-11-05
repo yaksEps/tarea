@@ -6,14 +6,15 @@ public class BrindarInformacion{
         Scanner teclado = new Scanner(System.in);
         int opcion;
         System.out.println("Ingrese la opcion");
-        System.out.println("1.- 2.- 3.- 4.- 5.-");
+        System.out.println("1.Johnny Depp- 2.Akira Toriyama- 3.Mario Benedetti- 4.Vincent van Gogh- 5'El Temach' (Luis Castilleja).-");
         opcion=teclado.nextInt();
         switch(opcion){
-            case 1: System.out.println(""); break;
-            case 2: System.out.println(""); break;
-            case 3: System.out.println(""); break;
-            case 4: System.out.println(""); break;
-            case 5: System.out.println(""); break;
+            case 1: System.out.println("Johnny Depp: Actor y productor estadounidense, conocido por su versatilidad en papeles excéntricos. Ha destacado en películas como Pirates of the Caribbean, donde interpretó al carismático Capitán Jack Sparrow, y Edward Scissorhands. A lo largo de su carrera, ha trabajado con renombrados directores como Tim Burton, convirtiéndose en un icono de personajes únicos y multifacéticos."); break;
+            case 2: System.out.println("Akira Toriyama: Mangaka y diseñador japonés, famoso por crear la serie Dragon Ball, una de las más influyentes en la historia del manga y el anime. Su estilo de dibujo distintivo y su habilidad para combinar acción con humor lo han hecho un referente en la industria. También contribuyó al diseño de personajes para videojuegos como Dragon Quest."); break;
+            case 3: System.out.println("Mario Benedetti: Escritor, poeta y ensayista uruguayo, conocido por su capacidad de abordar temas de amor, soledad y justicia social en sus obras. Su prosa clara y cercana lo convirtió en una figura querida en América Latina. Su obra más conocida, La tregua, ha sido traducida a varios idiomas y adaptada en cine y teatro."); break;
+            case 4: System.out.println("Vincent van Gogh: Pintor neerlandés y figura central del postimpresionismo. Su estilo distintivo incluye el uso audaz de colores y pinceladas expresivas. Obras como La noche estrellada y Los girasoles son reconocidas mundialmente. Aunque no tuvo éxito en vida, su influencia en el arte moderno ha sido inmensa."); break;
+            case 5: System.out.println("'El Temach' (Luis Castilleja): Influencer mexicano que comparte contenido de desarrollo profesional, especialmente en el área de tecnología. Su estilo directo y desenfadado ha captado una gran audiencia en redes sociales, donde ofrece consejos sobre empleabilidad, entrevistas de trabajo y habilidades digitales."); break;
+            case 6: system.out.println("")
         }
     }
 }
