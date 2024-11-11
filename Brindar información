@@ -14,7 +14,7 @@ public class BrindarInformacion{
             case 3: System.out.println("Mario Benedetti: Escritor, poeta y ensayista uruguayo, conocido por su capacidad de abordar temas de amor, soledad y justicia social en sus obras. Su prosa clara y cercana lo convirtió en una figura querida en América Latina. Su obra más conocida, La tregua, ha sido traducida a varios idiomas y adaptada en cine y teatro."); break;
             case 4: System.out.println("Vincent van Gogh: Pintor neerlandés y figura central del postimpresionismo. Su estilo distintivo incluye el uso audaz de colores y pinceladas expresivas. Obras como La noche estrellada y Los girasoles son reconocidas mundialmente. Aunque no tuvo éxito en vida, su influencia en el arte moderno ha sido inmensa."); break;
             case 5: System.out.println("'El Temach' (Luis Castilleja): Influencer mexicano que comparte contenido de desarrollo profesional, especialmente en el área de tecnología. Su estilo directo y desenfadado ha captado una gran audiencia en redes sociales, donde ofrece consejos sobre empleabilidad, entrevistas de trabajo y habilidades digitales."); break;
-            case 6: system.out.println("")
+            case 6: system.out.default.sout.break;
         }
     }
 }
