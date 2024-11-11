@@ -1,0 +1,22 @@
+
+import java.util.Scanner;
+
+public class CalificacionesLetras {
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        double calificacion;
+        System.out.print("Ingrese la calificacion: ");
+        calificacion=teclado.nextDouble();
+        if(calificacion>=100 && calificacion>=90){
+            System.out.println("Su calificacion es de: A ");
+        }else if(calificacion<=89 && calificacion>=80){
+            System.out.println("Su calificacion es de: B ");
+        }else if(calificacion<=79 && calificacion>=70){
+            System.out.println("Su calificacion es de: C ");
+        }else if(calificacion<=60 && calificacion>=69){
+            System.out.println("Su calificacion es de: D ");
+        }else if(calificacion<60){
+            System.out.println("Su calificacion es de: F ");
+        }
+    }
+}
