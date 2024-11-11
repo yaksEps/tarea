@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+public class ConvertidorGrados {
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        double grados,convercion;
+        int opcion;
+        System.out.print("Ingrese una temperatura en Celcius: ");
+        grados=teclado.nextDouble();
+        System.out.println("¿A que lo quiere convertir?");
+        System.out.println("Ingrese 1 para Fahrenheit y 2 para Kelvin: ");
+        opcion=teclado.nextInt();
+        switch(opcion){
+            case 1: convercion=(grados*9/5)+32;
+            System.out.println(grados+"°C son "+convercion+"°F");
+            break;
+            case 2: convercion=grados+273.15;
+            System.out.println(grados+"°C son "+convercion+"°K");
+            break;
+        }
+    }
+}
