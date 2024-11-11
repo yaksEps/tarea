@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Factorial {
+  public static void main(String[] args){
+    Scanner teclado = new Scanner(System.in);
+    int numero,i=1,resultado;
+    System.out.println("Ingrese un numero para factoriazar: ");
+    numero=teclado.nextInt();
+    resultado=numero;
+    while(i<numero){
+      resultado*=i;
+      i++;
+    }
+    System.out.println(resultado);
+  }
+}
