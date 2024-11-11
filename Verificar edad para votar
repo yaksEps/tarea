@@ -1,0 +1,16 @@
+
+import java.util.Scanner;
+
+public class EdadParaVotar {
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        int edad;
+        System.out.print("Ingrese su edad: ");
+        edad=teclado.nextInt();
+        if(edad<18){
+            System.out.print("No puedes votar");
+        }else{
+            System.out.print("Si puedes votar");
+        }
+    }
+}
