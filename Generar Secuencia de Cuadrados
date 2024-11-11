@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class SecuanciaDeCuadrados{
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int numero,i=1,cuadrado;
+        System.out.println("Ingrese un numero: ");
+        numero=teclado.nextInt();
+        if(numero>0){
+            do {
+                cuadrado=i*i;
+                System.out.println("El cuadrado de "+i+" es "+ cuadrado);
+                i++;
+            } while (i<=numero);
+        }else{
+            System.out.println("El numero no es positivo o entero");
+        }
+    }
+}
