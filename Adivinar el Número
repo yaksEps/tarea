@@ -1,23 +1,16 @@
-
 import java.util.Scanner;
 
-public class ConteoNumeros{
-    public static void main(String[] args){
+public class AdivinarNumero{
+    public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        int numero,mayor=0,menor=0,veces,i=0;
-        System.out.println("Los numeros que quiere ingresar: ");
-        veces=teclado.nextInt();
-        while (i<=veces) { 
-            System.out.println("Ingrese el "+i+" numero:");
-            numero=teclado.nextInt();
-            if(numero>0){
-                mayor=mayor+1;
-            }else{
-                menor=menor+1;
-            }
-            i++;
+        int numero,aleatorio;
+        aleatorio=(int) (Math.random() * 100+1);
+        System.out.println("Ingrese el numero que usted cree que es (1 al 100): ");
+        numero=teclado.nextInt();
+        if(numero==aleatorio){
+            System.out.println("El numero es correcto");
+        }else{
+            System.out.println("El numero es incorreto, era "+aleatorio);
         }
-        System.out.println("Numeros mayores que 0: "+mayor);
-        System.out.println("Numeros  menores 0: "+menor);
     }
 }
