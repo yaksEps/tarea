@@ -1,0 +1,29 @@
+
+import java.util.Scanner;
+
+public class ConvertidorMonedas {
+    public static void main(String[] args){
+       Scanner teclado = new Scanner(System.in);
+       double pesos,convercion=0;
+       int seleccion;
+       System.out.print("Ingrese la cantidad de dinero: ");
+       pesos=teclado.nextDouble();
+       System.out.println("1.-Dolar 2.-Euro 3.-Bath 4.-Yen 5.-Won 6.-Dolar Australiano 7.-Sol 8.-Dolar Canadiense 9.-Bolivar 10.-Peso Argentino");
+       System.out.print("Ingrese el numero de moneda a convertir: ");
+       seleccion=teclado.nextInt();
+       switch(seleccion){
+           case 1: convercion=pesos/19.88; break;
+           case 2: convercion=pesos/22.01; break;
+           case 3: convercion=pesos/1.68; break;
+           case 4: convercion=pesos/0.13; break;
+           case 5: convercion=pesos/0.015; break;
+           case 6: convercion=pesos/13.30; break;
+           case 7: convercion=pesos/5.36; break;
+           case 8: convercion=pesos/14.54; break;
+           case 9: convercion=pesos/2.11; break;
+           case 10: convercion=pesos/0.020; break;
+           default: System.out.println("Moneda no encontrada"); break;
+       }
+       System.out.println("El cambio es de: "+convercion);
+    }
+}
