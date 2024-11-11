@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Vocales{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        String letra;
+        System.out.println("Ingrese una palabra");
+        letra=teclado.next();
+        while(letra.charAt(0)!=' '){
+            if(letra.charAt(0)=='a' || letra.charAt(0)=='e' || letra.charAt(0)=='i' || letra.charAt(0)=='o' || letra.charAt(0)=='u'){
+                System.out.println("Si es una vocal");
+            }else{
+                System.out.println("No es una vocal");
+            }
+            System.out.println("Ingrese otra palabra");
+            letra=teclado.next();
+        }
+    }
+}
