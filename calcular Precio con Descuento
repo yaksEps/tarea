@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Descuento {
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        double precio,descuento,total;
+        descuento=0;
+        System.out.print("Ingrese el precio del producto: ");
+        precio=teclado.nextDouble();
+        if(precio<=100){
+            descuento=0;
+        }else if(precio>100 && precio<=200){
+            descuento=0.10;
+        }else if(precio>200 && precio<=500){
+            descuento=0.20;
+        }else if(precio>500){
+            descuento=0.25;
+        }
+        total=precio-(precio*descuento);
+        System.out.println("El precio final es de: "+total);
+    }
+}
