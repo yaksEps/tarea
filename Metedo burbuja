@@ -1,0 +1,29 @@
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MetodoBurbuja{
+    public static void main(String[] args) {
+        Scanner teclado= new Scanner(System.in);
+        System.out.print("Ingrese el numero de espacios en el array: ");
+        int n=teclado.nextInt();
+        int[] arreglo=new int[n];
+        for (int d=0; d<arreglo.length; d++) {
+            System.out.print("Ingrese un numero:");
+            arreglo[d]=teclado.nextInt();
+        }
+        bubbleSort(arreglo);
+        System.out.print(Arrays.toString(arreglo));
+    }
+    public static void bubbleSort(int[] arreglo){
+        for (int i=0;i<arreglo.length-1;i++){
+            for(int j=0;j<arreglo.length-i-1;j++){
+                if(arreglo[j]>arreglo[j+1]){
+                    int temp=arreglo[j];
+                    arreglo[j]=arreglo[j+1];
+                    arreglo[j+1]=temp;
+                }
+            }
+        }
+    } 
+}
